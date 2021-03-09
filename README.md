@@ -50,6 +50,7 @@ git clone https://github.com/dmasuda1116/Scraping.git
 ### set up chromedriver(Only available on macbook)
 
 ```
+cd Scraping/scripts/
 chmod 755 get_driver.sh
 sh get_driver.sh
 ```
@@ -65,6 +66,7 @@ When "Enter the line access token: " is displayed, enter the access token
 
 # Let's scraping
 ```
+cd ../src
 python3 main.py
 ```
 
