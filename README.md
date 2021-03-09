@@ -25,6 +25,7 @@ BuildVersion:	18G7016
 4. Login from the upper right
 5. Click the same place as login to go to My Page
 6. Get access token
+
 Make a copy of the access token as it will be used for set up.
 
 ### Set up
