@@ -5,14 +5,14 @@ The acquisition result will be notified on LINE.
 
 # Environment
 
-ProductName:	Mac OS X
-ProductVersion:	10.14.6
-BuildVersion:	18G7016
+* ProductName:	Mac OS X
+* ProductVersion:	10.14.6
+* BuildVersion:	18G7016
 
 # Requirement
 
-* Python3 3.7.4
-* pip3 19.3.1
+* Python 3.7.4
+* pip 19.3.1
 * selenium 3.141.0
 * requests 2.24.0
 
@@ -26,7 +26,7 @@ BuildVersion:	18G7016
 5. Click the same place as login to go to My Page
 6. Get access token
 
-Make a copy of the access token as it will be used for set up.
+Save the access token somewhere as it will be used later.
 
 ### Install Python3
 
@@ -46,9 +46,8 @@ pip3 install selenium requests
 ```
 git clone https://github.com/dmasuda1116/Scraping.git
 ```
-When "Enter the line access token: " is displayed, enter the access token
 
-### set up chromedriver
+### set up chromedriver(Only available on macbook)
 
 ```
 chmod 755 get_driver.sh
@@ -62,7 +61,7 @@ chmod 755 setting_line.sh
 sh setting_line.sh
 ```
 
-
+When "Enter the line access token: " is displayed, enter the access token
 
 # Let's scraping
 ```
