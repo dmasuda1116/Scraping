@@ -26,7 +26,7 @@ The acquisition result will be notified on LINE.
 5. Click the same place as login to go to My Page
 6. Get access token
 
-Make a copy of the access token as it will be used for set up.
+Save the access token somewhere as it will be used later.
 
 ### Install Python3
 
@@ -47,7 +47,7 @@ pip3 install selenium requests
 git clone https://github.com/dmasuda1116/Scraping.git
 ```
 
-### set up chromedriver
+### set up chromedriver(Only available on macbook)
 
 ```
 chmod 755 get_driver.sh
