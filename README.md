@@ -11,8 +11,8 @@ BuildVersion:	18G7016
 
 # Requirement
 
-* Python3 3.7.4
-* pip3 19.3.1
+* Python 3.7.4
+* pip 19.3.1
 * selenium 3.141.0
 * requests 2.24.0
 
