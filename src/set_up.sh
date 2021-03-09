@@ -20,6 +20,12 @@ elif [ ${number} = "89"  ]; then
   rm chromedriver_mac64.zip
 fi
 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew install python3
+python3 -V
+
+pip3 install selenium
+pip3 install requests
 
 echo "Enter the line access token: "
 while True ; do
