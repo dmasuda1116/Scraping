@@ -46,7 +46,6 @@ pip3 install selenium requests
 ```
 git clone https://github.com/dmasuda1116/Scraping.git
 ```
-When "Enter the line access token: " is displayed, enter the access token
 
 ### set up chromedriver
 
@@ -62,7 +61,7 @@ chmod 755 setting_line.sh
 sh setting_line.sh
 ```
 
-
+When "Enter the line access token: " is displayed, enter the access token
 
 # Let's scraping
 ```
