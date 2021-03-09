@@ -38,6 +38,7 @@ def coupon_check(status_before, url, name,key):
     #獲得可能クーポン状況を取得
     log = driver.find_elements_by_class_name("btn_01")
     status = list(map(lambda c: c.text, log))
+    driver.quit()
 
     #クーポン状況に変更があれば
     if status != status_before:
