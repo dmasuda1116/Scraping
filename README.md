@@ -37,6 +37,8 @@ chmod 755 set_up.sh
 When "Enter the line access token: " is displayed, enter the access token
 
 # Let's scraping
+```
 python3 main.py
+```
 
 
