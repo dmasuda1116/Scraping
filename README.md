@@ -22,7 +22,7 @@ BuildVersion:	18G7016
 
 1. Add LINE Notify to your friends.
 2. Access LINE Notify (https://notify-bot.line.me/ja/)
-4. Login from the upper right
+4. Log in from the upper right
 5. Click the same place as login to go to My Page
 6. Get access token
 
