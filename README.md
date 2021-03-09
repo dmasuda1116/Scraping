@@ -28,14 +28,41 @@ BuildVersion:	18G7016
 
 Make a copy of the access token as it will be used for set up.
 
-### Set up
+### Install Python3
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew install python3
+python3 -V
+```
+
+### Install modules
+
+```
+pip3 install selenium requests
+```
+
+### Get souce code
 ```
 git clone https://github.com/dmasuda1116/Scraping.git
-cd Scraping/src/
-chmod 755 set_up.sh
-./set_up.sh
 ```
 When "Enter the line access token: " is displayed, enter the access token
+
+### set up chromedriver
+
+```
+chmod 755 get_driver.sh
+sh get_driver.sh
+```
+
+### make config for LINE notify
+
+```
+chmod 755 setting_line.sh
+sh setting_line.sh
+```
+
+
 
 # Let's scraping
 ```
