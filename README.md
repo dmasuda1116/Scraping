@@ -5,9 +5,9 @@ The acquisition result will be notified on LINE.
 
 # Environment
 
-ProductName:	Mac OS X
-ProductVersion:	10.14.6
-BuildVersion:	18G7016
+* ProductName:	Mac OS X
+* ProductVersion:	10.14.6
+* BuildVersion:	18G7016
 
 # Requirement
 
