@@ -11,14 +11,35 @@ def list_dif(list_1,list_2,name):
     second = [name + i.replace('を獲得', 'の配布は終了しました>_<') for i in list(set(list_2) -set(list_1))]
     return [first,second]
 
+def web_access(url):
+    #初期設定
+    options = Options()
+
+    #ブラウザ非表示モード
+    options.add_argument('--headless')
+    config = Config()
+
+    #クーポンページを取得
+    while True:
+        driver = webdriver.Chrome(config.driver_path, options=options)
+        driver.get(url)
+        driver.implicitly_wait(10)
+        print (driver.current_url)
+        if driver.current_url == url:
+            break
+    return driver
+
+
 def jalan_coupon():
     #初期化
     all_coupon = []
     specific_coupon = []
 
     #クーポンurl
-    all_facilities_url = 'https://www.jalan.net/discountCoupon/CAM4504742/'
-    specific_facility_url = 'https://www.jalan.net/discountCoupon/CAM5078491/'
+    #all_facilities_url = 'https://www.jalan.net/discountCoupon/CAM4504742/'
+    #specific_facility_url = 'https://www.jalan.net/discountCoupon/CAM5078491/'
+    all_facilities_url = 'https://www.jalan.net/discountCoupon/CAM6003447/'
+    specific_facility_url = 'https://www.jalan.net/discountCoupon/CAM6635735/'
     
     #ブラウザ監視
     while True:
@@ -38,8 +59,10 @@ def coupon_check(status_before, url, name):
     options.add_argument('--headless')
 
     #クーポンページを取得
-    driver = webdriver.Chrome(config.driver_path, options=options)
-    driver.get(url) 
+    #driver = webdriver.Chrome(config.driver_path, options=options)
+    #driver.get(url)
+    driver = web_access(url) 
+    print(driver)
 
     #獲得可能クーポン状況を取得
     log = driver.find_elements_by_class_name("btn_01")
