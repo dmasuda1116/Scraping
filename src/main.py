@@ -50,7 +50,7 @@ def coupon_check(status_before, url, name):
     dif = list_dif(status,status_before,name)[0]
     if len(dif) != 0:
         for i in range(len(dif)):
-            LINE(dif[i], config.access_token)
+            LINE(dif[i] + url, config.access_token)
 
     return status
 
