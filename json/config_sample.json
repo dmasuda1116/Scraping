@@ -1,4 +1,4 @@
 {
  "access_token": "実際のaccess_token",
- "driver_path": "chrome_driverのpath"
+ "driver_path": "../scripts/chromedriver"
 }
