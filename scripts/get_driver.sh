@@ -1,4 +1,5 @@
 chrome=$(/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version)
+cd ..
 array=( `echo $chrome | tr -s '/' ' '`)
 echo ${chrome}
 echo ${array[2]}
