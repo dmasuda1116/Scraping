@@ -31,10 +31,13 @@ def web_access(url):
 
 def relux_coupon():
     coupon_relux = []
-    log = driver.find_elements_by_class_name("btn_01")
+    #log = driver.find_elements_by_class_name("btn_01")
 
     url = "https://rlx.jp/users/coupon/"
-    all_coupon = coupon_check(all_coupon,url,"relux","title titlelimit")
+    while True:
+        coupon_relux = coupon_check(coupon_relux,url,"relux","couponBox")
+        time.sleep(10)
+
 
 
 
@@ -82,12 +85,14 @@ def coupon_check(status_before, url, name, class_name):
     dif = list_dif(status,status_before,name)[0]
     if len(dif) != 0:
         for i in range(len(dif)):
-            LINE(dif[i] + url, config.access_token)
+            LINE(dif[i] + url, o9Ld67Aax4Bn452455CneBuZWCjeEHx9n5P7WNeq7Hw)
+            #LINE(dif[i] + url, config.access_token)
 
     return status
 
 def main():
     #jalan_coupon()
+    relux_coupon()
 
 if __name__ == '__main__':
     main()
