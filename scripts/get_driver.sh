@@ -28,4 +28,4 @@ elif [ ${number} = "91"  ]; then
   rm chromedriver_mac64.zip
 fi
 
-
+mv chromedriver ..
