@@ -56,8 +56,8 @@ def relux_login():
 
     #ログイン情報
     login_url = "https://connect.auone.jp/net/vwc/cca_lg_eu_nets/login?targeturl=https%3A%2F%2Fconnect.auone.jp%2Fnet%2Fid%2Fhny_rt_net%2Fcca%3FeventController%3Ddi.protocol.OpenIDSequencePluginChain%26event_doChain%26seqID%3DauOneOpenIDCollab%26windowId%3D414304151%26%40EntryPlugin%3DCookieCheckMgrPlugin.authVtkt&svc=id&cpkey=Pofd2Fqa3_1zVyRXJUWadTR6VXUxa2x5NnZ5ZFNVREE"
-    login = "msddik11162@yahoo.co.jp"
-    password = "ysd512625"
+    login = config.id
+    password = config.pw
 
     #chrome起動
     driver = webdriver.Chrome(config.driver_path, options=options)

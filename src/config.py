@@ -6,3 +6,5 @@ class Config:
         config = json.load(open(json_path, "r"))
         self.access_token = config["access_token"]
         self.driver_path = config["driver_path"]
+        self.id = config["id"]
+        self.pw = config["pw"]
