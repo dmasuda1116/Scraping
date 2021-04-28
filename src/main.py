@@ -29,6 +29,15 @@ def web_access(url):
             break
     return driver
 
+def relux_coupon():
+    coupon_relux = []
+    log = driver.find_elements_by_class_name("btn_01")
+
+    url = "https://rlx.jp/users/coupon/"
+    all_coupon = coupon_check(all_coupon,url,"relux","title titlelimit")
+
+
+
 
 def jalan_coupon():
     #初期化
@@ -44,13 +53,13 @@ def jalan_coupon():
     #ブラウザ監視
     while True:
       #全施設クーポン
-      all_coupon = coupon_check(all_coupon,all_facilities_url,"全国")
+      all_coupon = coupon_check(all_coupon,all_facilities_url,"全国","btn_01")
       time.sleep(5)
       #施設限定クーポン
-      specific_coupon = coupon_check(specific_coupon, specific_facility_url,"施設限定")
+      specific_coupon = coupon_check(specific_coupon, specific_facility_url,"施設限定","btn_01")
       time.sleep(5)
 
-def coupon_check(status_before, url, name):
+def coupon_check(status_before, url, name, class_name):
     #初期設定
     config = Config()
 
@@ -65,7 +74,7 @@ def coupon_check(status_before, url, name):
     print(driver)
 
     #獲得可能クーポン状況を取得
-    log = driver.find_elements_by_class_name("btn_01")
+    log = driver.find_elements_by_class_name(class_name)
     status = list(map(lambda c: c.text, log))
     driver.quit()
 
@@ -78,7 +87,7 @@ def coupon_check(status_before, url, name):
     return status
 
 def main():
-    jalan_coupon()
+    #jalan_coupon()
 
 if __name__ == '__main__':
     main()
