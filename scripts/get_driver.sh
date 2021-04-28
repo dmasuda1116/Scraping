@@ -18,5 +18,14 @@ elif [ ${number} = "89"  ]; then
   wget https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_mac64.zip
   unzip chromedriver_mac64.zip
   rm chromedriver_mac64.zip
+elif [ ${number} = "90"  ]; then
+  wget https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_mac64.zip
+  unzip chromedriver_mac64.zip
+  rm chromedriver_mac64.zip
+elif [ ${number} = "91"  ]; then
+  wget https://chromedriver.storage.googleapis.com/91.0.4472.19/chromedriver_mac64.zip
+  unzip chromedriver_mac64.zip
+  rm chromedriver_mac64.zip
 fi
+
 
