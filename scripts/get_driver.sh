@@ -6,7 +6,7 @@ split=(${array[2]//./ })
 number=$split
 echo ${number}
 
-rm chromedriver
+rm ../chromedriver
 if [ ${number} = "88"  ]; then
   wget https://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_mac64.zip
   unzip chromedriver_mac64.zip
